@@ -1,0 +1,526 @@
+body{
+    margin: auto;
+    background-color: #f1ebeb;
+}
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+h2 {
+    color: #4f857c;
+    font-size: 25px;
+}
+
+h3 {
+    color: #4f857c;
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid #dddddd;
+}
+
+.nav{
+    background-color: rgb(138, 173, 200);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav li{
+   list-style: none;
+   display: inline;
+   text-align: center;
+   
+}
+.nav li a{
+    color: white; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Verdana;
+    margin: 10px;
+    padding: 2px 15px;  
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #7fd5c8;
+    border-radius: 5px;
+    background-color: #4f857c;
+}
+
+.banner {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    max-height: 350px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.4;
+    height: 100%;
+}
+
+.banner h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.active {
+    background-color: silver!important;
+}
+
+.container .blog {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+    padding-right: 120px;
+}
+
+.blog .blog-box {
+    max-width: 100%;
+    position: relative;
+    display: block;
+}
+
+.blog-box h2 {
+    margin-bottom: 0;
+}
+
+.blog-box img {
+    width: 100%;
+}
+
+.blog-box-first {
+    display: block;
+    position: relative;
+    height: 420px;
+    background-color: black;
+}
+
+.blog-box-first img {
+    display: block;
+    position: relative;
+    opacity: 0.7;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-box-first-p {
+    display: block;
+    width: auto;
+    max-width: 400px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    padding: 30px;
+    background: rgba(255,255,255, 0.9);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blog-box-first-p .first-p {
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.blog-box-first-p hr {
+    margin-top: 0;
+}
+
+.blog-box-secound {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.blog-box-secound img {
+    max-width: 255px;
+    max-height: 255px;
+}
+
+.blog-box-secound-p {
+    padding-left: 20px;
+}
+
+.blog-box-secound-p .first-p {
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.blog-box-secound-p .secound-p {
+    margin-bottom: 0;
+}
+
+.view-more {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.view-more button {
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 2px;
+    padding: 10px 5px;
+    font-weight: 800;
+    background-color: #4f857c;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.view-more button:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+    border-color: white;
+    color: #333;
+}
+
+.sidebar {
+    display: block;
+    width: 30%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+    height: 100%;
+}
+
+.sidebar-box {
+    padding-bottom: 50px;
+}
+
+.sidebar-box h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sidebar-box hr {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.sidebar-box .select-archive {
+    font: inherit;
+    font-weight: inherit;
+    padding: 8px 4px;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.sidebar-box-list li {
+    list-style: circle;
+    padding: 5px 0;
+}
+
+.sidebar-box-list li a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.sidebar-box-about {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-box-about hr {
+    margin: 10px 0;
+}
+
+.sidebar-box-about img {
+    max-height: 255px;
+    width: 100%;
+    display: block;
+}
+
+.sidebar-box-about p {
+    padding: 0 10px;
+    text-align: justify;
+    line-break: anywhere;
+}
+
+.footer {
+    background-color: #fff5f2;
+    margin-top: 50px;
+    padding: 20px 10px;
+}
+
+.footer .container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .container h1 {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.copyright {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.banner-about {
+    max-height: 250px;
+}
+
+.about-us {
+    display: flex;
+
+}
+
+.about-us-img {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.about-us-img img {
+    width: 100%;
+}
+
+.about-us-text {
+    max-width: 50%;
+    position: relative;
+    display: block;
+    padding: 50px;
+    top: 20%;
+}
+
+.about-btn {
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.about-btn a {
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 2px;
+    padding: 10px 5px;
+    font-weight: 800;
+    background-color: #4f857c;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-btn a:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+    border-color: white;
+    color: #333;
+}
+
+.contact {
+    max-height: 250px;
+}
+.contact-banner{
+    max-height: 250px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 2px;
+    padding: 10px 5px;
+    font-weight: 800;
+    background-color: #4f857c;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: antiquewhite;
+    transition: 0.5s;
+    border-color: white;
+    color: #333;
+  }
+
+  #footer-animation{
+    height: 20px;
+    position: absolute;
+
+    animation-name: footer-img;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+  }
+  #footer-animation img{
+    animation-timing-function: ease-out;
+  }
+  @keyframes footer-img {
+    from {left: 30%;}
+    to {left: 60%;}
+}
+
+@media(max-width:1080px) {
+
+    .banner {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+    
+    .container .blog {
+        padding-right: 25px;
+    }
+
+    .about-us-text {
+        padding: 10px;
+    }
+}
+
+@media(max-width:720px) {
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .container .blog {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .sidebar-box-about img {
+        object-fit: cover;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-img {
+        max-width: 100%;
+    }
+
+    .about-us-text {
+        max-width: 100%;
+    }
+
+    .contact {
+        max-height: 100%;
+    }
+}
+
+@media(max-width:440px) {
+    .nav{
+        height: 90px;
+    }
+    .nav ul{
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .nav li{
+        margin: 5px;
+    }
+    .banner {
+        height: 100vh;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+    }
+    
+    .blog-box-secound {
+        flex-direction: column;
+    }
+
+    .blog-box-secound img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .blog-box-secound-p {
+        padding-left: 0;
+    }
+
+    .blog-box-first {
+        height: 300px;
+    }
+
+    .blog-box-first-p {
+        max-width: 100%;
+        left: 0;
+        bottom: 15%;
+        padding: 5px;
+    }
+
+    .blog-box-first-p {
+        font-size: 16px;
+    }
+
+    .footer h1{
+        font-size: 25px;
+    }
+
+    .about-btn {
+        width: 50%;
+    }
+}
